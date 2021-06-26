@@ -1,11 +1,11 @@
 const all = require('../dist/index.js')
 
-const testText = 'Hola mundo!'
 const expectedName = 'Luke Skywalker'
+const myName = 'Joshua'
 
 describe('Index Test', () => {
   it('First test', () => {
-    expect(all.test(testText)).toBe(testText)
+    expect(all.saludo(myName)).toBe(`Hola, mi nombre es ${myName}`)
   })
 
   it('Second test', async () => {

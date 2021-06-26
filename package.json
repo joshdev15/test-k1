@@ -1,7 +1,7 @@
 {
-  "name": "test-k1",
+  "name": "test-k1-joshdev",
   "version": "1.0.0",
-  "description": "test-k1",
+  "description": "My first npm module",
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/joshdev15/test-k1#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "isomorphic-fetch": "^3.0.0",
     "jest": "^27.0.5",
     "typescript": "^4.3.4"
   }

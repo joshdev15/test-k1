@@ -7,11 +7,11 @@ export const run = async (category: string = 'people/1') => {
   return response.data
 }
 
-export const test = (text: string) => {
-  return text
+export const saludo = (name: string) => {
+  return `Hola, mi nombre es ${name}`
 }
 
 export default {
   run,
-  test
+  saludo
 }
