@@ -1,9 +1,6 @@
-import Pokemon from './src/api/pokemon';
-export { Pokemon };
+import * as pokemon from './src/api/pokemon';
+export declare const Pokemon: typeof pokemon;
 declare const _default: {
-    Pokemon: {
-        getByName: (name: string) => Promise<any>;
-        getByID: (id: string) => Promise<any>;
-    };
+    Pokemon: typeof pokemon;
 };
 export default _default;

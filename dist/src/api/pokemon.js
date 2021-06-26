@@ -58,7 +58,10 @@ export var getByName = function (name) { return __awaiter(void 0, void 0, void 0
 }); };
 export var getByID = function (id) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        return [2 /*return*/, getByName(id)];
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, getByName(id)];
+            case 1: return [2 /*return*/, _a.sent()];
+        }
     });
 }); };
 export default {
