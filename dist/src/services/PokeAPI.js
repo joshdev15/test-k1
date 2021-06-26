@@ -1,9 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const axios_1 = require("axios");
-const baseURL = 'https://pokeapi.co/api/v2/';
-const PokeAPI = axios_1.default.create({
-    baseURL
+import axios from 'axios';
+var baseURL = 'https://pokeapi.co/api/v2/';
+var PokeAPI = axios.create({
+    baseURL: baseURL
 });
-exports.default = PokeAPI;
+export default PokeAPI;
 //# sourceMappingURL=PokeAPI.js.map

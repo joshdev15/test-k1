@@ -1,7 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const pokemon_1 = require("./src/api/pokemon");
-exports.default = {
-    Pokemon: pokemon_1.default
+import Pokemon from './src/api/pokemon';
+export { Pokemon };
+export default {
+    Pokemon: Pokemon
 };
 //# sourceMappingURL=index.js.map
