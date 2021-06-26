@@ -11,7 +11,7 @@ export const saludo = (name: string) => {
   return `Hola, mi nombre es ${name}`
 }
 
-export default {
+module.exports = {
   run,
   saludo
 }

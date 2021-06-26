@@ -1,8 +1,8 @@
 {
   "name": "test-k1-joshdev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My first npm module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "test": "yarn build && yarn jest --coverage"
