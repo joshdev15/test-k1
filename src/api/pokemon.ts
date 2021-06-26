@@ -13,7 +13,7 @@ export const getByName = async (name: string) => {
 }
 
 export const getByID = async (id: string) => {
-  return getByName(id)
+  return await getByName(id)
 }
 
 export default {

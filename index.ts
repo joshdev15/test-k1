@@ -1,6 +1,6 @@
-import Pokemon from './src/api/pokemon'
+import * as pokemon from './src/api/pokemon'
 
-export { Pokemon }
+export const Pokemon = pokemon
 
 export default {
   Pokemon
