@@ -1,20 +1,22 @@
-const all = require('../dist/index.js')
-
-const expectedName = 'Luke Skywalker'
-const myName = 'Joshua'
+import all from '../dist/index.js'
+const expectedFirstName = 'pikachu'
+const expectedSecondName = 'mewtwo'
 
 describe('Index Test', () => {
-  it('First test', () => {
-    expect(all.saludo(myName)).toBe(`Hola, mi nombre es ${myName}`)
+  it(`PokeApi - ${expectedFirstName}`, async () => {
+    const response = (await all.Pokemon.getPokemon(expectedFirstName)).data
+    const { name } = response
+    expect(name).toBe(expectedFirstName)
   })
 
-  it('Second test', async () => {
-    try {
-      const response = await all.run()
-      const { name } = response
-      expect(name).toBe(expectedName)
-    } catch (e) {
-      console.error(e)
-    }
+  it(`PokeApi - ${expectedSecondName}`, async () => {
+    const response = (await all.Pokemon.getPokemon(expectedSecondName)).data
+    const { name } = response
+    expect(name).toBe(expectedSecondName)
+  })
+
+  it(`PokeApi - Intentional Error`, async () => {
+    const error = await all.Pokemon.getPokemon('mmm')
+    expect(error.response.status).toBe(404)
   })
 })

@@ -1,7 +1,6 @@
-export declare const run: (category?: string) => Promise<any>;
-export declare const saludo: (name: string) => string;
 declare const _default: {
-    run: (category?: string) => Promise<any>;
-    saludo: (name: string) => string;
+    Pokemon: {
+        getPokemon: (name: string) => Promise<any>;
+    };
 };
 export default _default;
