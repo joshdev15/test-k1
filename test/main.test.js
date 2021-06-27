@@ -1,4 +1,4 @@
-import { Pokemon } from '../src/index'
+import { Pokemon } from '../dist/index'
 const expectedFirstName = 'pikachu'
 const expectedSecondName = 'mewtwo'
 const expectedWithIDName = 'bulbasaur'
