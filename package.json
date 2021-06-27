@@ -1,7 +1,7 @@
 {
-  "name": "test-k1-joshdev",
+  "name": "pokeapi-tool",
   "version": "1.0.15",
-  "description": "My first npm module",
+  "description": "PokeAPI Tool",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
