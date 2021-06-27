@@ -2,7 +2,7 @@ import PokeApi from '../services/PokeAPI'
 
 const localRoute = 'pokemon'
 
-const getByName = async (name: string) => {
+export const getByName = async (name: string) => {
   console.log(name)
   try {
     const response = await PokeApi.get(`${localRoute}/${name}`)
@@ -12,8 +12,8 @@ const getByName = async (name: string) => {
   }
 }
 
-const getByID = async (id: string) => {
+export const getByID = async (id: string) => {
   return await getByName(id)
 }
 
-export { getByName, getByID }
+export default { getByName, getByID }
