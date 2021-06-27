@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 import PokeApi from '../services/PokeAPI';
 var localRoute = 'pokemon';
-var getByName = function (name) { return __awaiter(void 0, void 0, void 0, function () {
+export var getByName = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     var response, err_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -56,7 +56,7 @@ var getByName = function (name) { return __awaiter(void 0, void 0, void 0, funct
         }
     });
 }); };
-var getByID = function (id) { return __awaiter(void 0, void 0, void 0, function () {
+export var getByID = function (id) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, getByName(id)];
@@ -64,5 +64,5 @@ var getByID = function (id) { return __awaiter(void 0, void 0, void 0, function 
         }
     });
 }); };
-export { getByName, getByID };
+export default { getByName: getByName, getByID: getByID };
 //# sourceMappingURL=pokemon.js.map

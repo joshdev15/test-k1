@@ -1,8 +1,4 @@
-import { getByName, getByID } from './api/pokemon';
-export var Pokemon = {
-    getByName: getByName,
-    getByID: getByID
-};
+import Pokemon from './api/pokemon';
 export default {
     Pokemon: Pokemon
 };
