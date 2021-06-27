@@ -8,7 +8,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
-    "moduleResolution": "node",
+    "moduleResolution": "classic",
     "stripInternal": true,
     "outDir": "dist",
     "allowJs": false,
