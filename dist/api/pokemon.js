@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,9 +35,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import PokeApi from '../services/PokeAPI';
+exports.__esModule = true;
+exports.getByID = exports.getByName = void 0;
+var PokeAPI_1 = require("../services/PokeAPI");
 var localRoute = 'pokemon';
-export var getByName = function (name) { return __awaiter(void 0, void 0, void 0, function () {
+var getByName = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     var response, err_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -45,7 +48,7 @@ export var getByName = function (name) { return __awaiter(void 0, void 0, void 0
                 _a.label = 1;
             case 1:
                 _a.trys.push([1, 3, , 4]);
-                return [4 /*yield*/, PokeApi.get(localRoute + "/" + name)];
+                return [4 /*yield*/, PokeAPI_1["default"].get(localRoute + "/" + name)];
             case 2:
                 response = _a.sent();
                 return [2 /*return*/, response];
@@ -56,13 +59,15 @@ export var getByName = function (name) { return __awaiter(void 0, void 0, void 0
         }
     });
 }); };
-export var getByID = function (id) { return __awaiter(void 0, void 0, void 0, function () {
+exports.getByName = getByName;
+var getByID = function (id) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, getByName(id)];
+            case 0: return [4 /*yield*/, exports.getByName(id)];
             case 1: return [2 /*return*/, _a.sent()];
         }
     });
 }); };
-export default { getByName: getByName, getByID: getByID };
+exports.getByID = getByID;
+exports["default"] = { getByName: exports.getByName, getByID: exports.getByID };
 //# sourceMappingURL=pokemon.js.map

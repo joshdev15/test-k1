@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
-    "target": "ES5",
+    "module": "CommonJS",
+    "target": "ES3",
     "noImplicitAny": false,
     "strictNullChecks": true,
     "preserveConstEnums": true,
@@ -12,7 +12,7 @@
     "stripInternal": true,
     "outDir": "dist",
     "allowJs": false,
-    "lib": ["es2017", "dom"],
+    "lib": ["es5", "dom"],
     "typeRoots": ["node_modules/@types"]
   },
   "files": ["src/index.ts"],
