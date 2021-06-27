@@ -1,4 +1,4 @@
-import pokemon from './api/pokemon'
+import * as pokemon from './api/pokemon'
 
 export const Pokemon = pokemon
 
