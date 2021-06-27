@@ -15,7 +15,7 @@
     "lib": ["es2017", "dom"],
     "typeRoots": ["node_modules/@types"]
   },
-  "files": ["index.ts"],
+  "files": ["src/index.ts"],
   "exclude": ["node_modules", "dist"],
   "include": ["test/**/*.spec.ts", "src/**/*.ts", "e2e/**/*.ts"]
 }

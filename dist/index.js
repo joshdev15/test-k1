@@ -1,4 +1,4 @@
-import pokemon from './src/api/pokemon';
+import pokemon from './api/pokemon';
 export var Pokemon = pokemon;
 export default {
     Pokemon: Pokemon
