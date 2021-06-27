@@ -1,6 +1,9 @@
-import * as pokemon from './api/pokemon'
+import { getByName, getByID } from './api/pokemon'
 
-export const Pokemon = pokemon
+export const Pokemon = {
+  getByName,
+  getByID
+}
 
 export default {
   Pokemon
